@@ -25,13 +25,17 @@ public class EventParser {
      * @param file
      * @return
      */
-    public static Map<EventEnum, Map<String, Integer>> parseEvent(File file) throws IOException {
+    public static Map<EventEnum, Map<String, Integer>> parseEvent(File file){
 
         if(null==file || !file.exists())  return null;
 
         LOGGER.debug("开始处理文件：{}", file.getName());
         LineProcessor<Map<EventEnum, Map<String, Integer>>> linePorcessor = new EventProcessor();
-        Files.readLines(file, Charsets.UTF_8, linePorcessor);
+        try {
+            Files.readLines(file, Charsets.UTF_8, linePorcessor);
+        } catch (IOException e) {
+            LOGGER.error("读取文件失败", e);
+        }
         return linePorcessor.getResult();
     }
 }
