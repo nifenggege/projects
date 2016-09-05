@@ -46,11 +46,12 @@ public class TriggerLarger {
 
                 List<String> sampleList = sampleWordNum2WordsMap.get(num);
                 if(null == sampleList){
+                    type2wordsMap.put(type, wordsSet);
                     continue;
                 }
 
                 for(String str : sampleList){
-                    wordsSet.add(str);
+                    wordsSet.add(str+":"+word);
                     word2typeMap.put(str, type);
                 }
 
