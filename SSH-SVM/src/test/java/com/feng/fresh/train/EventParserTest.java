@@ -37,4 +37,17 @@ public class EventParserTest {
 
     }
 
+    @Test
+    public void parseTestCorpusEvent() throws Exception {
+
+        String path = this.getClass().getClassLoader().getResource("train/test-arg.txt").getPath();
+        File file = new File(path);
+        Assert.assertTrue(null!=file && file.exists());
+        Map<EventEnum, Map<String, Integer>> map = EventParser.parseEvent(file);
+        Assert.assertTrue(map != null);
+        LOGGER.info(map.toString());
+        FileUtils.loadMapStringMap(map, new File("trigger-counter.txt"));
+
+    }
+
 }

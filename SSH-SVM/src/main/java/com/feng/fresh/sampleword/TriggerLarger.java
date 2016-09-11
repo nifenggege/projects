@@ -50,7 +50,7 @@ public class TriggerLarger {
                 }
 
                 for(String str : sampleList){
-                    wordsSet.add(str);
+                    wordsSet.add(str+":"+word);
                     word2typeMap.put(str, type);
                 }
 
