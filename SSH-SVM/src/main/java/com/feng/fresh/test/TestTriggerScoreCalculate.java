@@ -19,7 +19,6 @@ import java.util.regex.Pattern;
 public class TestTriggerScoreCalculate {
 
     static final Logger LOGGER = LoggerFactory.getLogger(TestTriggerScoreCalculate.class);
-    static final String SEPORETOR = "[。,!,?]";
 
     /**
      * 使用已有的数据
@@ -40,6 +39,23 @@ public class TestTriggerScoreCalculate {
     //保存句子
     private static List<String> sentenceList = Lists.newArrayList();
     private static Set<String> triggerSet = Sets.newHashSet();
+
+    public static Map<String, EventEnum> getWord2typeMap() {
+        return word2typeMap;
+    }
+
+    public static void setWord2typeMap(Map<String, EventEnum> word2typeMap) {
+        TestTriggerScoreCalculate.word2typeMap = word2typeMap;
+    }
+
+    public static Map<String, Double> getSorceMap() {
+        return sorceMap;
+    }
+
+    public static void setSorceMap(Map<String, Double> sorceMap) {
+        TestTriggerScoreCalculate.sorceMap = sorceMap;
+    }
+
     //触发词候选--》得分
     private static Map<String, Double> sorceMap = Maps.newHashMap();
 
@@ -50,6 +66,10 @@ public class TestTriggerScoreCalculate {
         trigger2SentenceCounterMap = TriggerScorePre.getTrigger2SentenceCounterMap();
         sentenceTotalNum = TriggerScorePre.getSentenceTotalNum();
         type2CounterMap = TriggerScorePre.getType2CounterMap();
+
+        String path = TestTriggerScoreCalculate.class.getClassLoader().getResource("seq/test-seq.txt").getPath();
+        File file = new File(path);
+        TestTriggerScoreCalculate.parseTest(file);
     }
 
     /**

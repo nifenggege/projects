@@ -3,6 +3,7 @@ package com.feng.fresh.train;
 import com.feng.fresh.model.EventEnum;
 import com.feng.fresh.sampleword.TriggerLarger;
 import com.feng.fresh.test.TestTriggerScoreCalculate;
+import com.feng.fresh.tools.StringUtils;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -22,7 +23,6 @@ import java.util.regex.Pattern;
 public class TriggerScorePre {
 
     static final Logger LOGGER = LoggerFactory.getLogger(TriggerScorePre.class);
-    static final String SEPORETOR = "[。,!,?]";
 
     /**
      * 使用已有的数据
@@ -98,7 +98,7 @@ public class TriggerScorePre {
      * @param line
      */
     private static void parseLine(String line) {
-        Iterable<String> list = Splitter.on(Pattern.compile(SEPORETOR)).trimResults().omitEmptyStrings().split(line);
+        Iterable<String> list = Splitter.on(Pattern.compile(StringUtils.SEPORETOR)).trimResults().omitEmptyStrings().split(line);
         for(String str : list){
             sentenceList.add(str);
             Iterable<String> tokens = Splitter.on(Pattern.compile("(\\s)+")).trimResults().omitEmptyStrings().split(str);
