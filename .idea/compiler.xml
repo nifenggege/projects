@@ -24,12 +24,14 @@
         <processorPath useClasspath="true" />
         <module name="SSH-1.0" />
         <module name="SSH-SVM" />
+        <module name="SSH-SVM1.1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="projects" target="1.5" />
       <module name="SSH-1.0" target="1.5" />
       <module name="SSH-SVM" target="1.5" />
+      <module name="SSH-SVM1.1" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
