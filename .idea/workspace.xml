@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64f146c-5e04-46e8-974c-78ced75cda4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/model/Constant.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM/trigger-counter.txt" afterPath="$PROJECT_DIR$/SSH-SVM/trigger-counter.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/lineprocessor/EventProcessor.java" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/lineprocessor/EventProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/sampleword/TriggerLarger.java" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/sampleword/TriggerLarger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/test/CreateResult.java" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/test/CreateResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/test/TestTriggerScoreCalculate.java" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/test/TestTriggerScoreCalculate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/train/EventParser.java" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/train/EventParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/train/TriggerScorePre.java" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/java/com/feng/fresh/train/TriggerScorePre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/resource/seq/train-seq.txt" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/resource/seq/train-seq.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/src/main/resource/train/train-arg.txt" afterPath="$PROJECT_DIR$/SSH-SVM1.1/src/main/resource/train/train-arg.txt" />
     </list>
     <ignored path="projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -892,7 +882,7 @@
       <workItem from="1474073599419" duration="4470000" />
       <workItem from="1474678441572" duration="12469000" />
       <workItem from="1474796976027" duration="13194000" />
-      <workItem from="1474891725991" duration="4000" />
+      <workItem from="1474891725991" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.1">
       <created>1474074786645</created>
@@ -901,7 +891,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474074786645</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version 1.1">
+      <created>1474891741029</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1474891741029</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -937,10 +934,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35615000" />
+    <option name="totallyTimeSpent" value="35658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1223,6 +1220,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,6 +1228,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1237,6 +1236,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,6 +1251,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="427" column="146" selection-start-line="427" selection-start-column="146" selection-end-line="427" selection-end-column="146" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,6 +1259,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1029">
           <caret line="358" column="130" selection-start-line="358" selection-start-column="130" selection-end-line="358" selection-end-column="130" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,6 +1267,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1272,6 +1275,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,6 +1318,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="81" selection-end-column="50" />
+          <folding>
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,6 +1329,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
