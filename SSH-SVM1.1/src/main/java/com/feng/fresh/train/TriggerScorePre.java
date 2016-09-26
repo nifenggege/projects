@@ -1,5 +1,6 @@
 package com.feng.fresh.train;
 
+import com.feng.fresh.model.Constant;
 import com.feng.fresh.model.EventEnum;
 import com.feng.fresh.sampleword.TriggerLarger;
 import com.feng.fresh.test.TestTriggerScoreCalculate;
@@ -29,6 +30,8 @@ public class TriggerScorePre {
      */
     //词==》类型
     public static Map<String, EventEnum> word2typeMap = Maps.newHashMap();
+    //句子中的正确答案
+    private static List<List<String>> sentenceTriggerList = Lists.newArrayList();
 
     /**
      * 需要计算的值
@@ -44,6 +47,7 @@ public class TriggerScorePre {
 
     //保存句子
     private static List<String> sentenceList = Lists.newArrayList();
+    private static int count = 0;
 
 
     /**
@@ -53,11 +57,18 @@ public class TriggerScorePre {
 
     static{
 
-        word2typeMap = TriggerLarger.getWord2typeMap();
-
-        String path =  TestTriggerScoreCalculate.class.getClassLoader().getResource("seq/train-seq.txt").getPath();
+        String path = TriggerScorePre.class.getClassLoader().getResource("train/train-arg.txt").getPath();
         File file = new File(path);
-        TriggerScorePre.splitSentece(file);
+        EventParser.parseEvent(file);
+        LOGGER.info("【正确答案】，{}",EventParser.getTriggerMap().toString());
+
+        word2typeMap = EventParser.getWord2typeMap();
+        sentenceTriggerList = EventParser.getSentenceTriggerList();
+        System.out.println(sentenceTriggerList.size());
+
+/*        String path =  TestTriggerScoreCalculate.class.getClassLoader().getResource("seq/train-seq.txt").getPath();
+        File file = new File(path);
+        TriggerScorePre.splitSentece(file);*/
     }
 
     /**
@@ -98,19 +109,26 @@ public class TriggerScorePre {
      * @param line
      */
     private static void parseLine(String line) {
-        Iterable<String> list = Splitter.on(Pattern.compile(StringUtils.SEPORETOR)).trimResults().omitEmptyStrings().split(line);
-        for(String str : list){
+        String[] sentences = line.trim().split(Constant.SPLIT_FOR_SENTENCE);
+        for(String str : sentences){
+            //System.out.println(str);
+            List<String> senteceHavaList = Lists.newArrayList();
+            if(count < sentenceTriggerList.size()-1) {
+                senteceHavaList = sentenceTriggerList.get(count++);
+            }
             sentenceList.add(str);
             Iterable<String> tokens = Splitter.on(Pattern.compile("(\\s)+")).trimResults().omitEmptyStrings().split(str);
+            Set<String> set = Sets.newHashSet(tokens);
             for(String token : tokens){
                 if(word2typeMap.containsKey(token)){
-                    increaseMap(trigger2CounterMap, token); //一个句子可以统计多个相同的词
-                    increaseMap(type2CounterMap, word2typeMap.get(token));
+                    if(senteceHavaList.contains(token)){
+                        increaseMap(trigger2CounterMap, token); //一个句子可以统计多个相同的词
+                        increaseMap(type2CounterMap, word2typeMap.get(token));
+                    }
                 }
             }
 
-            Set<String> set = Sets.newHashSet(tokens);
-            for(String token : tokens){
+            for(String token : set){
                 if(word2typeMap.containsKey(token)){
                     increaseMap(trigger2SentenceCounterMap, token);   //一个句子只能统计一个相同的词
                 }

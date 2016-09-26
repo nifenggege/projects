@@ -14,6 +14,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 /**
+ * 计算得分
  * Created by feng on 2016/9/11.
  */
 public class TestTriggerScoreCalculate {
@@ -39,9 +40,14 @@ public class TestTriggerScoreCalculate {
     //保存句子
     private static List<String> sentenceList = Lists.newArrayList();
     private static Set<String> triggerSet = Sets.newHashSet();
+    private static Set<String> verbAndNonword = Sets.newHashSet();
 
     public static Map<String, EventEnum> getWord2typeMap() {
         return word2typeMap;
+    }
+
+    public static Set<String> getVerbAndNonword() {
+        return verbAndNonword;
     }
 
     public static void setWord2typeMap(Map<String, EventEnum> word2typeMap) {
@@ -61,15 +67,19 @@ public class TestTriggerScoreCalculate {
 
     static{
 
+        String path =  TestTriggerScoreCalculate.class.getClassLoader().getResource("seq/train-seq.txt").getPath();
+        File file = new File(path);
+        TriggerScorePre.splitSentece(file);
+
         word2typeMap = TriggerScorePre.getWord2typeMap();
         trigger2CounterMap = TriggerScorePre.getTrigger2CounterMap();
         trigger2SentenceCounterMap = TriggerScorePre.getTrigger2SentenceCounterMap();
         sentenceTotalNum = TriggerScorePre.getSentenceTotalNum();
         type2CounterMap = TriggerScorePre.getType2CounterMap();
 
-        String path = TestTriggerScoreCalculate.class.getClassLoader().getResource("seq/test-seq.txt").getPath();
-        File file = new File(path);
-        TestTriggerScoreCalculate.parseTest(file);
+/*        path = TestTriggerScoreCalculate.class.getClassLoader().getResource("seq/test-seq.txt").getPath();
+        file = new File(path);
+        TestTriggerScoreCalculate.parseTest(file);*/
     }
 
     /**
@@ -89,9 +99,13 @@ public class TestTriggerScoreCalculate {
                 Iterable<String> tokens = Splitter.on(Pattern.compile("(\\s)+")).trimResults().omitEmptyStrings().split(line);
                 for(String token : tokens ){
                     String[] strs = token.split("/");
-                    if(strs.length>1 && (strs[1].equals("n") ||strs[1].equals("v")) && trigger2CounterMap.containsKey(strs[0])){
-
-                        triggerSet.add(strs[0]);
+                    if(strs.length>1 && (strs[1].equals("n") ||strs[1].equals("v"))){
+                        if(!trigger2CounterMap.containsKey(strs[0])){
+                            verbAndNonword.add(strs[0]);
+                        }
+                        else {
+                            triggerSet.add(strs[0]);
+                        }
                     }
                 }
 
