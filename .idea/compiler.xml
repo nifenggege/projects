@@ -22,13 +22,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="HaParse" />
+        <module name="SentenceParse (1)" />
         <module name="SSH-1.0" />
         <module name="SSH-SVM" />
         <module name="SSH-SVM1.1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="HaParse" target="1.5" />
       <module name="projects" target="1.5" />
+      <module name="SentenceParse" target="1.5" />
+      <module name="SentenceParse (1)" target="1.5" />
       <module name="SSH-1.0" target="1.5" />
       <module name="SSH-SVM" target="1.5" />
       <module name="SSH-SVM1.1" target="1.5" />

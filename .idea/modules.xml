@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/HaParse/HaParse.iml" filepath="$PROJECT_DIR$/HaParse/HaParse.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSH-1.0/SSH-1.0.iml" filepath="$PROJECT_DIR$/SSH-1.0/SSH-1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSH-SVM/SSH-SVM.iml" filepath="$PROJECT_DIR$/SSH-SVM/SSH-SVM.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSH-SVM1.1/SSH-SVM1.1.iml" filepath="$PROJECT_DIR$/SSH-SVM1.1/SSH-SVM1.1.iml" />
