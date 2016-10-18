@@ -1,42 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e64f146c-5e04-46e8-974c-78ced75cda4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/HaParse.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/src/main/java/com/feng/fresh/APIClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/src/main/java/com/feng/fresh/DPParse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/src/main/java/com/feng/fresh/HttpClientAPI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/src/main/java/com/feng/fresh/SentenceSplitTools.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/src/resources/noLabelFile.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HaParse/src/test/java/com/feng/fresh/DPParseTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/classes/samplewordtree/sampleword.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/classes/seq/test-seq.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/classes/seq/train-seq.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/classes/train/test-arg.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/classes/train/train-arg.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/test-classes/com/feng/fresh/sampleword/SampWordParseTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/test-classes/com/feng/fresh/sampleword/TriggerLargerTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/test-classes/com/feng/fresh/test/CreateResultTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/test-classes/com/feng/fresh/test/TestTriggerScoreCalculateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/test-classes/com/feng/fresh/train/EventParserTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SSH-SVM1.1/target/test-classes/com/feng/fresh/train/TriggerScordTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+    <list default="true" id="e64f146c-5e04-46e8-974c-78ced75cda4e" name="Default" comment="version 1.1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-1.0/SSH-1.0.iml" afterPath="$PROJECT_DIR$/SSH-1.0/SSH-1.0.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM/SSH-SVM.iml" afterPath="$PROJECT_DIR$/SSH-SVM/SSH-SVM.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSH-SVM1.1/SSH-SVM1.1.iml" afterPath="$PROJECT_DIR$/SSH-SVM1.1/SSH-SVM1.1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects.iml" afterPath="$PROJECT_DIR$/projects.iml" />
     </list>
     <ignored path="projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -169,8 +135,8 @@
       <file leaf-file-name="noLabelFile.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HaParse/src/resources/noLabelFile.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="434" column="9" selection-start-line="434" selection-start-column="9" selection-end-line="434" selection-end-column="9" />
+            <state relative-caret-position="418">
+              <caret line="448" column="33" selection-start-line="448" selection-start-column="33" selection-end-line="448" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -408,102 +374,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HaParse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HaParse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fresh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HaParse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HaParse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fresh" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1216,7 +1086,7 @@
       <workItem from="1476494530489" duration="4513000" />
       <workItem from="1476540743061" duration="1110000" />
       <workItem from="1476580491991" duration="11547000" />
-      <workItem from="1476801512618" duration="16000" />
+      <workItem from="1476801512618" duration="357000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.1">
       <created>1474074786645</created>
@@ -1232,7 +1102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474891741029</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="version 1.1">
+      <created>1476801571732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1476801571732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1268,7 +1145,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63671000" />
+    <option name="totallyTimeSpent" value="64012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1540,6 +1417,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="28" column="21" selection-start-line="20" selection-start-column="8" selection-end-line="28" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1547,6 +1425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="53" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1578,6 +1457,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1746,8 +1626,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HaParse/src/resources/noLabelFile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="434" column="9" selection-start-line="434" selection-start-column="9" selection-end-line="434" selection-end-column="9" />
+        <state relative-caret-position="418">
+          <caret line="448" column="33" selection-start-line="448" selection-start-column="33" selection-end-line="448" selection-end-column="33" />
           <folding />
         </state>
       </provider>
