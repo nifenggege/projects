@@ -53,4 +53,8 @@ public class SampWordParse {
            LOGGER.error("不能发现文件",e);
        }
    }
+
+   public static String getSampleCode(String word){
+       return word2labelMap.get(word);
+   }
 }
