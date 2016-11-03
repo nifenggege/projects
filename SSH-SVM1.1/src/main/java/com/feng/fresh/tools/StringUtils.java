@@ -5,5 +5,5 @@ package com.feng.fresh.tools;
  */
 public class StringUtils {
 
-    public static final String SEPORETOR = "[。!?]";
+    public static final String SEPORETOR = "[。！？]";
 }
