@@ -20,4 +20,13 @@ public class CreateSVMResultTest {
         CreateSVMResult.resultFactory(file);
     }
 
+    @Test
+    public void resultFactorytrain() throws Exception {
+
+        String path = this.getClass().getClassLoader().getResource("seq/train-seq.txt").getPath();
+        File file = new File(path);
+        Assert.assertTrue(null!=file && file.exists());
+        CreateSVMResult.resultFactory(file);
+    }
+
 }

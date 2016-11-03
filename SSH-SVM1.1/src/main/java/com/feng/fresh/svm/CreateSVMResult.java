@@ -44,7 +44,7 @@ public class CreateSVMResult {
         sorceMap = TriggerLarger.getScoreMap();
         word2typeMap = TriggerLarger.getWord2typeMap();
 
-        String path = CreateSVMResult.class.getClassLoader().getResource("train/test-arg.txt").getPath();
+        String path = CreateSVMResult.class.getClassLoader().getResource("train/train-arg.txt").getPath();
         File file = new File(path);
         EventParser.parseEvent(file);
         LOGGER.info("【正确答案】，{}",EventParser.getTriggerMap().toString());
@@ -62,7 +62,7 @@ public class CreateSVMResult {
         BufferedWriter bufferedWriter = null;
         try {
             bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-            bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("svm.txt")));
+            bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("svm-train.txt")));
 
             String line = null;
             while((line=bufferedReader.readLine()) != null) { //磁性标注的句子
@@ -85,7 +85,7 @@ public class CreateSVMResult {
                     posList.add(posList.size(), "null/null");
 
                     //List<String> triggerForSentence = sentenceTriggerList.get(count);
-                    String sen = str.replaceAll("(\\s)+","");
+                    String sen = str.replaceAll("(\\s)+","").replaceAll("；",",");
                     standCount+= triggerForSentence.size();
                     String[] tokens = str.split("(\\s)+");
                     LOGGER.info("==tokens==={}",Lists.newArrayList(tokens));
@@ -93,7 +93,7 @@ public class CreateSVMResult {
                         String token = tokens[i];
                         if(sorceMap.containsKey(token) && sorceMap.get(token)>THREAD){  //这个词是触发词
                             //1. 词+词性
-                            String result = token+"\t"+pos[i]+"\t";
+                            String result = token+"\t"+pos[i].split("/")[1]+"\t";
                             //2. 左3词+词+右3词+左3词性+词性+右3词性
                             result += createStr(posList, i+3)+"\t";
                             //3. 获取左右实体
@@ -154,7 +154,7 @@ public class CreateSVMResult {
 
     private static String createEnty(String[] tokens, int i) {
 
-        return getLeftEnty(tokens, i) + getRightEnty(tokens, i);
+        return getLeftEnty(tokens, i) + "\t"+getRightEnty(tokens, i);
     }
 
     private static String getLeftEnty(String[] tokens, int index) {

@@ -28,6 +28,9 @@ public class DPParse {
         if(tokens[0].split("_")[0].equals(word)){
             return tokens[2];
         }
+
+
+        LOGGER.info("{}-{}-{}", sentence, word, pos);
         return null;
     }
 
@@ -47,6 +50,6 @@ public class DPParse {
     }
 
     public static void main(String[] args) {
-        System.out.println(dpParse("古典针法是前贤经验的总结，在临床实践中，如运用得法，常可收到理想疗效"));
+        System.out.println(getDPType("方法：采用大连产WE2102—3型射频治疗机并TDP加电针治疗慢性前列腺炎35例，每次治疗40min，15次为l疗程，共2—3个疗程", "电针", 12));
     }
 }

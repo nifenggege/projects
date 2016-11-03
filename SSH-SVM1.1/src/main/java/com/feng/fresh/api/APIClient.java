@@ -166,7 +166,7 @@ public class APIClient {
                     httpClient = getHttpClient();
 
                     httpGet =  new GetMethod(_MakeURL(url, params));
-                    System.out.println("最终访问get方法的RUL:"+_MakeURL(url, params));
+                    //System.out.println("最终访问get方法的RUL:"+_MakeURL(url, params));
 
 
                     int statusCode = httpClient.executeMethod(httpGet);
@@ -180,12 +180,12 @@ public class APIClient {
                     }
                     else
                     {
-                        System.out.println("Network connection failded!");
+                        //System.out.println("Network connection failded!");
                         time++;
                     }
                 } catch (Exception e) {
                     time++;
-                    System.out.println("重新连接");
+                    //System.out.println("重新连接");
                     try {
                         Thread.sleep(30000);
                     } catch (InterruptedException e1) {}
