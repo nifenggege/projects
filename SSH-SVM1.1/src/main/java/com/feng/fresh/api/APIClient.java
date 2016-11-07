@@ -192,8 +192,10 @@ public class APIClient {
                     continue;
                 }finally
                 {
-                    httpGet.releaseConnection();
-                    httpClient = null;
+                    if(httpGet != null) {
+                        httpGet.releaseConnection();
+                        httpClient = null;
+                    }
                 }
             }while(time < RETRY_TIME);
             return responseBody;

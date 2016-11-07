@@ -5,6 +5,7 @@ import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.io.Files;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,10 +26,35 @@ public class DPParse {
         List<String> dpList = dpParse(sentence);
         if(pos<0 || pos>=dpList.size()) return "null";
         String[] tokens = dpList.get(pos).split("(\\s)+");
-        if(tokens[0].split("_")[0].equals(word)){
+        if(StringUtils.isNotEmpty(tokens[0]) && tokens[0].split("_")[0].equals(word)){
             return tokens[2];
         }
 
+        for(int i=pos-3; i>0 && i<pos && i<dpList.size(); i++ ){
+            tokens = dpList.get(i).split("(\\s)+");
+            if(StringUtils.isNotEmpty(tokens[0])){
+                String[] strs = dpList.get(pos).split("(\\s)+")[0].split("_");
+                if(strs.length==2 && strs[1].equals(word)) {
+                    return tokens[2];
+                }
+                else{
+                    LOGGER.info("{}-{}-{}-{}", sentence, word, pos, Lists.newArrayList(strs));
+                }
+            }
+        }
+
+        for(int i=pos+1; i<pos+4 && i<dpList.size(); i++ ){
+            tokens = dpList.get(i).split("(\\s)+");
+            if(StringUtils.isNotEmpty(tokens[0])){
+                String[] strs = dpList.get(pos).split("(\\s)+")[0].split("_");
+                if(strs.length==2 && strs[1].equals(word)) {
+                    return tokens[2];
+                }
+                else{
+                    LOGGER.info("{}-{}-{}-{}", sentence, word, pos, Lists.newArrayList(strs));
+                }
+            }
+        }
 
         LOGGER.info("{}-{}-{}", sentence, word, pos);
         return null;
@@ -50,6 +76,6 @@ public class DPParse {
     }
 
     public static void main(String[] args) {
-        System.out.println(getDPType("方法：采用大连产WE2102—3型射频治疗机并TDP加电针治疗慢性前列腺炎35例，每次治疗40min，15次为l疗程，共2—3个疗程", "电针", 12));
+        System.out.println(getDPType("以中药内服，西药注射，针刺加电针刺激，TDP理疗及自我按摩综合法治疗面瘫24例，治愈率100％", "治疗", 12));
     }
 }
